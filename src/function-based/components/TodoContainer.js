@@ -65,12 +65,6 @@ const TodoContainer = () => {
   }, [setTodos]);
 
   useEffect(() => {
-    // storing todos items
-    // fetch('https://jsonplaceholder.typicode.com/todos?_limit=10')
-    //   .then((response) => response.json())
-    //   .then((data) => setTodos(data));
-    // console.log(todos);
-
     const temp = JSON.stringify(todos);
     localStorage.setItem('todos', temp);
   }, [todos]);
