@@ -2,7 +2,7 @@ import React from 'react';
 
 const Home = () => (
   <>
-    <div className="container mt-5">
+    <div className="container border">
       <p className="mt-5">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe sunt
         soluta distinctio incidunt tenetur quae inventore rerum, exercitationem
