@@ -9,7 +9,6 @@ body {
   line-height: 1.4;
   color: #444;
   background: #fff;
-  height: 100vh;
 }
 
 ul {
@@ -27,14 +26,24 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 600px;
+  max-width: 900px;
   margin: 0 auto;
-  height: 100vh;
 }
 
 .inner {
   width: 100%;
   padding: 4rem 10px 4rem;
+}
+
+.header {
+  font-size: 6rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  line-height: 1em;
+  color: #ececec;
+  text-transform: lowercase;
+  text-align: center;
+  padding-top: 3rem;
 }
 
 .form-container {
@@ -76,6 +85,50 @@ ul {
 }
 
 .bg-color {
-  width: 24%;
-  margin-top: 6rem;
+  width: 86px;
+  margin-top: 12px;
+  position: fixed;
+  background-image:
+    linear-gradient(
+      to left,
+      rgba(255, 0, 0, 0),
+      rgb(133 127 127)
+    );
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
+}
+
+@media only screen and (max-width: 605px) {
+  #root {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bg-color {
+    width: 100%;
+    margin-top: 0;
+    padding: 10px;
+    background-image: none;
+  }
+
+  .inner {
+    padding: 0;
+  }
+
+  a {
+    display: block;
+    padding: 10px 40px;
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
 }

@@ -70,7 +70,7 @@ const TodoContainer = () => {
   }, [todos]);
 
   return (
-    <div className="container border">
+    <div className="container">
       <div className="inner">
         <Header />
         <InputTodo addTodoProps={addTodoItem} />

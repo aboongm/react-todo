@@ -1,10 +1,10 @@
 import { Outlet, Link } from 'react-router-dom';
 import './NavBar.css';
 
-const Layout = () => (
+const NavBar = () => (
   <>
     <nav className="bg-color">
-      <ul>
+      <ul className="ps-1">
         <li>
           <Link to="/">Home</Link>
         </li>
@@ -17,4 +17,4 @@ const Layout = () => (
   </>
 );
 
-export default Layout;
+export default NavBar;
