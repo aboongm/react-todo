@@ -3,13 +3,13 @@ import './NavBar.css';
 
 const Layout = () => (
   <>
-    <nav>
+    <nav className="bg-color">
       <ul>
         <li>
-          <Link to="/todoContainer">Home</Link>
+          <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/">About</Link>
+          <Link to="/about">About</Link>
         </li>
       </ul>
     </nav>

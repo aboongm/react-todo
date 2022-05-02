@@ -33,7 +33,7 @@ ul {
 
 .inner {
   width: 100%;
-  padding: 8rem 10px 4rem;
+  padding: 4rem 10px 4rem;
 }
 
 .form-container {
@@ -72,4 +72,9 @@ ul {
   height: 45px;
   outline: none;
   border: none;
+}
+
+.bg-color {
+  width: 24%;
+  margin-top: 6rem;
 }
